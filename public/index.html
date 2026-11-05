@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0c0f">
+  <meta name="description" content="Una guía deportiva para descubrir qué ver ahora, próximamente y durante el fin de semana.">
+  <title>Sports Radar</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Sports Radar, inicio"><span class="orb" aria-hidden="true"></span><b>Sports</b><span>Radar</span></a>
+      <time id="clock" class="clock"></time>
+    </header>
+    <section class="hero">
+      <p class="eyebrow">GUÍA DEPORTIVA</p>
+      <p>Agenda deportiva real, actualizada desde fuentes configurables.</p>
+    </section>
+    <nav id="sports" aria-label="Filtrar por deporte"></nav><div class="hairline"></div>
+    <section aria-labelledby="live-heading"><div class="section-head"><h2 id="live-heading"><i class="live-dot" aria-hidden="true"></i>En directo</h2><span id="liveCount" class="muted" aria-live="polite"></span></div><div id="live" class="grid" aria-live="polite" aria-busy="true"></div></section>
+    <section aria-labelledby="upcoming-heading"><div class="section-head"><h2 id="upcoming-heading">Próximamente</h2><span class="muted">Hora peninsular</span></div><div id="upcoming" class="list" aria-live="polite" aria-busy="true"></div></section>
+    <section aria-labelledby="weekend-heading"><div class="section-head"><h2 id="weekend-heading">Este fin de semana</h2><span class="muted">Selección destacada</span></div><div id="weekend" class="cards" aria-live="polite" aria-busy="true"></div></section>
+    <footer><span>Sports Radar</span><span id="sourceNote" role="status">Cargando programación…</span></footer>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
